@@ -1,0 +1,14 @@
+<h1>kkoo v3 - Roblox Hub</h1>
+<button onclick="createScriptWindow()">스크립트 열기</button>
+
+<!-- 스크립트 모달 창 -->
+<div id="script-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>kkoo v3 hub script</h2>
+    <!-- 수정 불가능한 읽기 전용 텍스트 영역 -->
+    <textarea id="script-box" readonly>-- kkoo v3 허브입니다. loadstring(game:HttpGet("https://gist.githubusercontent.com/ishowkorean/83a6caf08e040c5440c88fe746f8353d/raw/db9eeae804659ff75226e06d39c9e7f3c092d27e/gistfile1.txt"))()</textarea>
+    <!-- 복사하기 버튼, X 버튼 바로 아래에 위치하도록 설정 -->
+    <button id="copy-btn" onclick="copyScript()">복사</button> <!-- 복사하기 버튼 추가 -->
+  </div>
+</div>
